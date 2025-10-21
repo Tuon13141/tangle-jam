@@ -1,0 +1,585 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e077c28c5f981d6ea72ae89ada6df53, type: 3}
+  m_Name: Long_Level_35
+  m_EditorClassIdentifier: 
+  PictureAsset: {fileID: 0}
+  PixelData:
+    Width: 32
+    Height: 32
+    Colors:
+    - {r: 1, g: 0.40784407, b: 0.20000048, a: 1}
+    - {r: 0.015686275, g: 0.93725574, b: 1, a: 1}
+    - {r: 1, g: 0.96862787, b: 0.10196102, a: 1}
+    - {r: 0.06666667, g: 0.40784407, b: 0.7921589, a: 1}
+    - {r: 0.54901963, g: 0.07450982, b: 0.07450982, a: 1}
+    - {r: 1, g: 0.22745126, b: 0.90980506, a: 1}
+    Data: 00000000000000000000000000000101010100000000000000000000000000000002020202020202020202020201030303030102020202020202020202020200000202020404040404040400010303050503030100040404040404040202020000020202020405050202000103030505050503030100020205050402020202000002040202020405020504000103030505030301000405020504020202040200000204040202020405050504000103030303010004050505040202020404020000020405040202020405050504000103030100040505050402020204050402000002040505040202020405040000000101000000040504020202040505040200000204020204040202020400000000000000000000040202020404020204020000020402040505040202000000000202020200000000020204050504020402000002040004050505040002000002020202020200000200040505050400040200000200010004050400000002020202010102020202000000040504000100020000000103010004000000000202020103030102020200000000040001030100000001030303010000000002020201030303030102020200000000010303030100010303050303010000020202010303050503030102020200000103030503030101030505050303010002020103030503030503030102020001030305050503010103050505030301000202010303050303050303010202000103030505050301010303050303010000020202010303050503030102020200000103030503030100010303030100000000020202010303030301020202000000000103030301000000010301000400000000020202010303010202020000000004000103010000000200010004050400000002020202010102020202000000040504000100020000020400040505050400020000020202020202000002000405050504000402000002040204050504020200000000020202020000000002020405050402040200000204020204040202020400000000000000000000040202020404020204020000020405050402020204050400000001010000000405040202020405050402000002040504020202040505050400010303010004050505040202020405040200000204040202020405050504000103030303010004050505040202020404020000020402020204050205040001030305050303010004050205040202020402000002020202040505020200010303050505050303010002020505040202020200000202020404040404040400010303050503030100040404040404040202020000020202020202020202020202010303030301020202020202020202020202000000000000000000000000000000010101010000000000000000000000000000
+  Slices: 080000000a0000000e000000
+  Stages:
+  - Width: 7
+    Height: 5
+    RandomCoils: 0,0,0,1,1,1,2,2,2,2,2,2,3,3,3,4,4,4,5,5,5
+    LockedCoils: 
+    Tutorial: 
+    Data:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 5
+    - Type: 2
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 2
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 3
+    - Type: 1
+      Value: 4
+      Direction: 3
+      String: 
+      MoveIndex: 3
+    - Type: 4
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 4
+      Value: 2
+      Direction: 3
+      String: 
+      MoveIndex: 6
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 5
+    - Type: 5
+      Value: 0
+      Direction: 2
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 3
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 2
+    - Type: 5
+      Value: 0
+      Direction: 3
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 6
+      Value: 0
+      Direction: 3
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 6
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 2
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 6
+      Value: 0
+      Direction: 2
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    tutorialType: 0
+    difficulty: 1
+  - Width: 7
+    Height: 5
+    RandomCoils: 0,0,0,1,1,1,2,2,2,3,3,3,3,3,3,4,4,4,5,5,5,5,5,5
+    LockedCoils: 
+    Tutorial: 
+    Data:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 5
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 6
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 7
+    - Type: 4
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 8
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 7
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 6
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 5
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 6
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 5
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 5
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 4
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 2
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 11
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 10
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 9
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 2
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    tutorialType: 0
+    difficulty: 1
+  - Width: 7
+    Height: 5
+    RandomCoils: 0,0,0,1,1,1,2,2,2,2,2,2,3,3,3,4,4,4,5,5,5
+    LockedCoils: 
+    Tutorial: 
+    Data:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 3
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 6
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 5
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 5
+      Value: 0
+      Direction: 3
+      String: 
+      MoveIndex: 0
+    - Type: 5
+      Value: 0
+      Direction: 3
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 6
+      Value: 0
+      Direction: 3
+      String: 
+      MoveIndex: 0
+    - Type: 4
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 4
+    - Type: 1
+      Value: 3
+      Direction: 0
+      String: 
+      MoveIndex: 3
+    - Type: 1
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 3
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 1
+      Value: 5
+      Direction: 1
+      String: 
+      MoveIndex: 2
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 2
+      Direction: 1
+      String: 
+      MoveIndex: 2
+    - Type: 1
+      Value: 3
+      Direction: 1
+      String: 
+      MoveIndex: 2
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 4
+      Value: 4
+      Direction: 0
+      String: 
+      MoveIndex: 1
+    - Type: 6
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 5
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 5
+      Value: 0
+      Direction: 1
+      String: 
+      MoveIndex: 0
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    - Type: 1
+      Value: 5
+      Direction: 0
+      String: 
+      MoveIndex: 0
+    tutorialType: 0
+    difficulty: 1
+  BackgroundColor:
+    value1: {r: 0.42352942, g: 0.5176471, b: 0.74509805, a: 1}
+    value2: {r: 0.22745098, g: 0.2627451, b: 0.42352942, a: 1}
+    value3: {r: 0.6509804, g: 0.7176471, b: 0.9607843, a: 1}
+  CoinsReward: 30
+  IsHard: 1
+  HideBoostersUI: 0
+  DisableRandom: 1

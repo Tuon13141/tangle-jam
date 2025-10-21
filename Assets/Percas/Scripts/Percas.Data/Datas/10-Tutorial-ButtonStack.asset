@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36f6115d4b0545f4ab9e1a35b732371, type: 3}
+  m_Name: 10-Tutorial-ButtonStack
+  m_EditorClassIdentifier: 
+  showType: 1
+  showInGame: 1
+  preNotice: 1
+  isBooster: 0
+  autoClose: 1
+  showCloseButton: 0
+  autoCloseIn: 6
+  id: 9
+  level: 15
+  wave: 1
+  image: {fileID: 21300000, guid: 07d339c560d574b8f967e97f1ce3b38d, type: 3}
+  iconInButton: {fileID: 0}
+  key: ele_button_stack
+  message: Tap on other coils to break all buttons <sprite=0>
+  messageWithoutImage: Tap on other coils to break all buttons <sprite=0>
+  title: Stack Button
+  spriteAsset: {fileID: 11400000, guid: d72771df2cc9f423b92516eaf675dc90, type: 2}
+  skeletonData: {fileID: 11400000, guid: e7a7821f104e0d1418bcadb71b3ce606, type: 2}

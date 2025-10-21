@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03decb4b93d7b4788a07d31e1771e4db, type: 3}
+  m_Name: HP_SummerBeach
+  m_EditorClassIdentifier: 
+  ID: 0
+  EventName: SUMMER BEACH
+  Desctiption: Let's swim!
+  PictureSize: 3
+  EventCoverImage: {fileID: 0}
+  EventIcon: {fileID: 21300000, guid: 772a6adeb99774cb4a1f96694c38ba31, type: 3}
+  HiddenPicture: {fileID: 21300000, guid: 5247a2fcc06c54967a9261c7107bbb3c, type: 3}
+  HiddenBackground: {fileID: 21300000, guid: f1772ee800be64c2daaa96679462d68f, type: 3}
+  PiecePictures:
+  - {fileID: 21300000, guid: b2d6413ccc0bb452ea40d0f1a29563d8, type: 3}
+  - {fileID: 21300000, guid: ef6697637e5ee4d5bba798a7fda05c95, type: 3}
+  - {fileID: 21300000, guid: 0364075cbc837471c8336f3acefd3544, type: 3}
+  - {fileID: 21300000, guid: b1e46b8c25ec746d3b07d2d73daed8a1, type: 3}
+  - {fileID: 21300000, guid: 2c82fd8a5aadc4f6baa27855d1cd792d, type: 3}
+  - {fileID: 21300000, guid: d0bbdeed367c5454eae8f30f6a8f73ba, type: 3}
+  - {fileID: 21300000, guid: dea7fb31dd4f245f285f39e2f7ca4997, type: 3}
+  - {fileID: 21300000, guid: 1d126a9d3d6cd447183f0910193dd435, type: 3}
+  - {fileID: 21300000, guid: b340660b0143a4962b301ed251e02f2c, type: 3}
+  LevelDatas:
+  - {fileID: 11400000, guid: 3af547c00520242f19d9fd2b02f3efb8, type: 2}
+  - {fileID: 11400000, guid: 14a9f5b1725a3428ea3a8ed68ac75468, type: 2}
+  - {fileID: 11400000, guid: e3a12d0123eb61b438462dc48db957e7, type: 2}
+  - {fileID: 11400000, guid: bc46a0079b07d6948807cc0ccb11af13, type: 2}
+  - {fileID: 11400000, guid: ae8d5bcf7b782c74182a5e30c55deced, type: 2}
+  - {fileID: 11400000, guid: ead0b709b7044ec439f5c691b5d0bb93, type: 2}
+  - {fileID: 11400000, guid: 9af2af49ad16a94469fb8698ec403e45, type: 2}
+  - {fileID: 11400000, guid: 2e984fcf20ca16d4f8b1ffc43f9aba38, type: 2}
+  - {fileID: 11400000, guid: 192b2997a2494d04e9512a0dcbb04f13, type: 2}

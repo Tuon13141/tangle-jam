@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36f6115d4b0545f4ab9e1a35b732371, type: 3}
+  m_Name: 2-Tutorial-CoilPath
+  m_EditorClassIdentifier: 
+  showType: 1
+  showInGame: 1
+  preNotice: 0
+  isBooster: 0
+  autoClose: 0
+  showCloseButton: 0
+  autoCloseIn: 3
+  id: 2
+  level: 2
+  wave: 1
+  image: {fileID: 21300000, guid: db2a0cb6df510415e8fcc6e873e53ef8, type: 3}
+  iconInButton: {fileID: 0}
+  key: 
+  message: Only <color=#04266F>coils</color> with an <color=#04266F>open path</color>
+    can be <color=#04266F>collected</color>
+  messageWithoutImage: 
+  title: 
+  spriteAsset: {fileID: 11400000, guid: 10121fc8fbefd41ff9db29b153bd9a6a, type: 2}
+  skeletonData: {fileID: 11400000, guid: 944e09a7943eee14b9c957c686ab582d, type: 2}

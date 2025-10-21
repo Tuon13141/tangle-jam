@@ -1,0 +1,104 @@
+{
+"skeleton": {
+	"hash": "ngdlLhs0HNo",
+	"spine": "4.2.35",
+	"x": -344.68,
+	"y": -180.31,
+	"width": 688.89,
+	"height": 360.66,
+	"images": "./Images/",
+	"audio": "D:/Work/PROJECT/Tangle Frenzy/Tutorial_3/Images"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "all", "parent": "root" },
+	{ "name": "Layer 42", "parent": "all", "length": 76.35, "rotation": 88.77, "x": -0.31, "y": -54.83 }
+],
+"slots": [
+	{ "name": "all", "bone": "all", "attachment": "all" },
+	{ "name": "Layer 1", "bone": "all", "attachment": "Layer 1" },
+	{ "name": "Layer 42", "bone": "Layer 42", "attachment": "Layer 42" },
+	{ "name": "Layer 44", "bone": "all", "attachment": "Layer 44" },
+	{ "name": "Layer 45", "bone": "all", "color": "ffffff00", "attachment": "Layer 42" },
+	{ "name": "Rectangle 154", "bone": "all", "attachment": "Rectangle 154" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"all": {
+				"all": {
+					"type": "clipping",
+					"end": "all",
+					"vertexCount": 12,
+					"vertices": [ -306.08, 180.08, 306.57, 180.35, 344.21, 179.36, 344.12, 143.14, 344.09, -141.8, 344.02, -180.19, 307.54, -180.31, -305.96, -179.66, -344.68, -179.12, -344.51, -142.29, -344.39, 142.12, -343.89, 179.81 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"Layer 1": {
+				"Layer 1": { "x": -0.22, "y": 0.07, "width": 690, "height": 362 }
+			},
+			"Layer 42": {
+				"Layer 42": { "x": 68.93, "y": -0.61, "rotation": -88.77, "width": 114, "height": 140 }
+			},
+			"Layer 44": {
+				"Layer 44": { "x": 2.28, "y": -95.63, "width": 103, "height": 126 }
+			},
+			"Layer 45": {
+				"Layer 42": { "x": 2.28, "y": -95.63, "scaleX": 0.9719, "scaleY": 0.9719, "width": 114, "height": 140 }
+			},
+			"Rectangle 154": {
+				"Rectangle 154": { "x": 0.13, "y": 0.21, "width": 688, "height": 360 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"Layer 45": {
+				"rgba": [
+					{
+						"time": 0.3333,
+						"color": "ffffff00",
+						"curve": [ 0.367, 1, 0.433, 1, 0.367, 1, 0.433, 1, 0.367, 1, 0.433, 1, 0.367, 0, 0.433, 1 ]
+					},
+					{ "time": 0.4667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Layer 42": {
+				"translate": [
+					{
+						"curve": [ 0.042, 0, 0.125, 0, 0.042, 0, 0.125, -24.51 ]
+					},
+					{
+						"time": 0.1667,
+						"y": -24.51,
+						"curve": [ 0.388, 0, 0.542, 0, 0.388, -24.51, 0.542, 351.52 ]
+					},
+					{ "time": 0.6667, "y": 351.52 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.05, 1, 0.15, 0.91, 0.05, 1, 0.15, 1.108 ]
+					},
+					{
+						"time": 0.2,
+						"x": 0.91,
+						"y": 1.108,
+						"curve": [ 0.317, 0.91, 0.401, 1.112, 0.317, 1.108, 0.401, 0.895 ]
+					},
+					{ "time": 0.6667, "x": 1.112, "y": 0.895 }
+				]
+			},
+			"all": {
+				"translate": [
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

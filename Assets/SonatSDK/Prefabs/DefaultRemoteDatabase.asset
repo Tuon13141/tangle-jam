@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a1bc15ad1db7f4e938a9d285ba2e05, type: 3}
+  m_Name: DefaultRemoteDatabase
+  m_EditorClassIdentifier: 
+  setting:
+    logLevelStart:
+      defaultValue: 0100000004000000080000000a000000140000001e00000028000000320000003c00000046000000500000005a00000064000000
+      key: log_level_start_array
+    logInterstitialAdsStart:
+      defaultValue: 0100000004000000080000000a000000140000001e00000028000000320000003c00000046000000500000005a00000064000000
+      key: log_interstitial_ads_start_array
+    logPaidAd:
+      defaultValue: 00000000
+      key: log_paid_ad_array
+  defaultConfigs:
+  - dataType: 1
+    defaultString: 0
+    defaultInt: 3
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 0
+  - dataType: 1
+    defaultString: 0
+    defaultInt: 31
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 1
+  - dataType: 3
+    defaultString: 
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 2
+  - dataType: 1
+    defaultString: 
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 3
+  - dataType: 0
+    defaultString: Merge Block
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 104
+  - dataType: 0
+    defaultString: Merge Block
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 105
+  - dataType: 0
+    defaultString: Merge Block
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 106
+  - dataType: 0
+    defaultString: Merge Block
+    defaultInt: 18
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 107
+  - dataType: 1
+    defaultString: 20
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 108
+  - dataType: 1
+    defaultString: 20
+    defaultInt: 999999
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 8
+  - dataType: 0
+    defaultString: 0,1
+    defaultInt: 1800
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 111
+  - dataType: 1
+    defaultString: 0,1
+    defaultInt: 13
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 109
+  - dataType: 3
+    defaultString: 0,1
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 112
+  - dataType: 1
+    defaultString: 0,1
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 113
+  - dataType: 3
+    defaultString: 0,1
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 11
+  - dataType: 0
+    defaultString: admob
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 10
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 9
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 2
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 149
+  - dataType: 1
+    defaultString: admob
+    defaultInt: -1
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 15
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 114
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 115
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 20
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 116
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 18
+  - dataType: 1
+    defaultString: admob
+    defaultInt: 20
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 17
+  - dataType: 1
+    defaultString: admob
+    defaultInt: -1
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 250
+  - dataType: 1
+    defaultString: admob
+    defaultInt: 19738
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 117
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 19738
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 252
+  - dataType: 1
+    defaultString: admob
+    defaultInt: 10
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 251
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 10
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 253
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 10
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 50
+  - dataType: 1
+    defaultString: admob
+    defaultInt: 12
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 19
+  - dataType: 1
+    defaultString: admob
+    defaultInt: 12
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 254
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 12
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 25
+  - dataType: 3
+    defaultString: admob
+    defaultInt: 12
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 51
+  listIntCollectionKeys: 960000002e010000
+  listStringCollectionKeys: 9700000098000000990000009a0000009b000000a0000000a1000000a2000000a3000000a4000000
+  other: {fileID: 0}

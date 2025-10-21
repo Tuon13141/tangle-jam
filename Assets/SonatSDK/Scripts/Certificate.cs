@@ -1,0 +1,20 @@
+using UnityEngine.Networking;
+using System.Security.Cryptography.X509Certificates;
+
+// Based on https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning#.Net
+public class AcceptAllCertificatesSignedWithASpecificKeyPublicKey : CertificateHandler
+{
+    // Encoded RSAPublicKey
+    private static string PUB_KEY = "99C96B4F8C85399D890A8C95C95467F662FE33A7D16257E1A6A5B648D8C0D94248D6CFE0D56B57927A50780118EA1C790D6928690DC74F42FA010DEC097B4D1A99F229EAD382E620A61790280234BD397FC9D4FEA69094C95D2E69F3EAA7C7B6C47357B31B1FD125F0EF7840D1F7A1D17A1FDB9CA1C7E6C56B3F5F004D4B9A3D7F93188D999B7743BBE57C2BBE3C3343486A87B0F9AE87CA58B2DEE6CBD8F065515F9D0D935DA00F95A0CDF65A8A8CB0E75551BFA29D4979276125540249F4395C2B67B446F4F132D2A0C04DBEFE568156D22850D80FCB2317B079718D0E01CA7B002961C82F5FCEFE61BB6A34A8475EAF11B200D45FCF5E4D35D78C0E7F1B01";
+
+    protected override bool ValidateCertificate(byte[] certificateData)
+    {
+        X509Certificate2 certificate = new X509Certificate2(certificateData);
+        string pk = certificate.GetPublicKeyString();
+        if (pk.Equals(PUB_KEY))
+            return true;
+
+        // Bad dog
+        return false;
+    }
+}

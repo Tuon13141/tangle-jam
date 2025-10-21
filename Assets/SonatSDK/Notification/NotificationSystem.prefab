@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2781816188445884565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2781816188445884570}
+  - component: {fileID: 2240584239877180233}
+  m_Layer: 0
+  m_Name: NotificationSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2781816188445884570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2781816188445884565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2240584239877180233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2781816188445884565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be76178801362024c97de37eb6938abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enableNotify: 1
+  repeatitionID: 10000
+  notifyItems:
+  - id: 0
+    title: Brick Breaker
+    content:
+    - Brick Breaker
+    small_icon: notify_small_icon
+    big_icon: notify_icon
+    hasSound: 0
+    hasVibrate: 0
+    notificationType: 1
+    notificationTimeType: 1
+    delayTime: 30
+    delayDate: 1
+    dateInWeek: 0
+    exactHour: 20
+    exactMinute: 0
+    exactSecond: 0
+    exactDate: 
+    repeatTimes: 45
+  notifications_data: "{\"notifications\":[{\"title\":\"\u2764\uFE0F Dice Merge love
+    you \u2764\uFE0F\",\"content\":\"\U0001F3C6 Tap here to conquest new levels \U0001F3C6\"},{\"title\":\"\U0001F343
+    Long time no see you playing!\U0001F917\",\"content\":\"\U0001F496 There are
+    way too many dices need you to merge \U0001F496\"},{\"title\":\"\U0001F389 Stress?
+    Say no more fam! \U0001F389\",\"content\":\"\U0001F388\U0001F38F Relax with Dice
+    Merge \U0001F388\U0001F38F\"},{\"title\":\"\U0001F4A1 Dice Merge here ! \u2714\uFE0F\",\"content\":\"\U0001F60D
+    Want to break some brick, come \U0001F60D\"},{\"title\":\"\U0001F4A1 Dices are
+    made to be merged \u2714\uFE0F\",\"content\":\"\U0001F60D Play Merge Dice now...
+    \U0001F60D\"},{\"title\":\"\U0001F34E Dice Merge having new level \U0001F352\",\"content\":\"\U0001F95D
+    \U0001F353 \U0001F350 Let's Play \U0001F350 \U0001F353 \U0001F95D\"},{\"title\":\"\U0001F4A1
+    Dice Merge is on duty! \U0001F4A1\",\"content\":\"\U0001F9E0 Play Merge Dice
+    now...\"},{\"title\":\"\U0001F381 Are you readdyyyyy!\",\"content\":\"\U0001F632
+    To merge some dices \"}]}"

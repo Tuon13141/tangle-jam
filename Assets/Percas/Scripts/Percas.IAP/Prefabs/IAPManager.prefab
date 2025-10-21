@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &59839549154514763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4523206927982624492}
+  - component: {fileID: 5743090922553765366}
+  m_Layer: 0
+  m_Name: IAPManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4523206927982624492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59839549154514763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5743090922553765366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59839549154514763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c989adf0b0042c0a80d31fd1baccc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  packs:
+  - productID: tf_pack_coin_1
+    productType: 0
+    productPackPriceInUSD: 1.99
+  - productID: tf_pack_coin_2
+    productType: 0
+    productPackPriceInUSD: 3.99
+  - productID: tf_pack_coin_3
+    productType: 0
+    productPackPriceInUSD: 14.99
+  - productID: tf_pack_coin_4
+    productType: 0
+    productPackPriceInUSD: 29.99
+  - productID: tf_pack_coin_5
+    productType: 0
+    productPackPriceInUSD: 49.99
+  - productID: tf_pack_coin_6
+    productType: 0
+    productPackPriceInUSD: 99.99
+  - productID: tf_remove_ads
+    productType: 1
+    productPackPriceInUSD: 9.99
+  - productID: tf_pack_starter
+    productType: 0
+    productPackPriceInUSD: 1.99
+  - productID: tf_pack_small
+    productType: 0
+    productPackPriceInUSD: 9.99
+  - productID: tf_pack_medium
+    productType: 0
+    productPackPriceInUSD: 19.99
+  - productID: tf_pack_large
+    productType: 0
+    productPackPriceInUSD: 39.99
+  - productID: tf_pack_piggy_bank
+    productType: 0
+    productPackPriceInUSD: 4.99
+  - productID: tf_pack_heart_offer
+    productType: 0
+    productPackPriceInUSD: 0.99

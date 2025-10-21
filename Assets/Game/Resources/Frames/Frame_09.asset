@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cc6e7501977434eabaf51f5edade06, type: 3}
+  m_Name: Frame_09
+  m_EditorClassIdentifier: 
+  type: 1
+  sprite: {fileID: 21300000, guid: 36d4d9c03d0164ff5bbb41cacfb1bee4, type: 3}
+  unlockByLevel: 100
+  unlockByVideoAd: 0
+  unlockByCoin: 0

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb645a17e89d70f4db8c60f2289ba80e, type: 3}
+  m_Name: RemoteData
+  m_EditorClassIdentifier: 
+  remoteLevelConfig:
+  - Key: level_unlock_home
+    Value: 6
+  - Key: level_unlock_shuffle
+    Value: 5
+  - Key: level_unlock_stack
+    Value: 6
+  - Key: level_unlock_addslots
+    Value: 10
+  - Key: level_unlock_lucky_spin
+    Value: 11
+  - Key: level_unlock_clear
+    Value: 15
+  - Key: level_unlock_hidden_coil
+    Value: 11
+  - Key: level_unlock_locked_pin
+    Value: 26
+  - Key: level_unlock_paired_coils
+    Value: 51
+  - Key: level_unlock_button_stack
+    Value: 101
+  - Key: level_call_to_rate
+    Value: 12
+  - Key: level_requires_internet
+    Value: 8
+  remoteLevelData: []

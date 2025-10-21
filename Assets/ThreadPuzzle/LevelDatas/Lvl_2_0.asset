@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e077c28c5f981d6ea72ae89ada6df53, type: 3}
+  m_Name: Lvl_2
+  m_EditorClassIdentifier:
+  PictureAsset: {fileID: 11400000, guid: 0edd20882bd30554590f8e94a430446b, type: 2}
+  Slices:
+  - 18
+  - 14
+  Stages:
+  - Width: 5
+    Height: 7
+    RandomCoils: 0,0,0,1,1,1,2,2,2
+    LockedCoils:
+    Tutorial: Coils with an open path can be picked
+    Data:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 2
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+  - Width: 4
+    Height: 4
+    RandomCoils: 0,0,0,1,1,1
+    LockedCoils:
+    Tutorial: Order of collected colors doesn’t matter
+    Data:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 1
+      Direction: 0
+      String:
+    - Type: 1
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 2
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+    - Type: 0
+      Value: 0
+      Direction: 0
+      String:
+  CoinsReward: 4
+  IsHard: 0
+  HideBoostersUI: 1
+  DisableRandom: 1

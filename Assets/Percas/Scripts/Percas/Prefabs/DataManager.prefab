@@ -1,0 +1,811 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &63584023757526355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3973839271325784177}
+  - component: {fileID: 6780824903802162511}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3973839271325784177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63584023757526355}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8891617232831878169}
+  - {fileID: 8872391339190657955}
+  - {fileID: 4574351946689024612}
+  - {fileID: 1156606020894998411}
+  - {fileID: 298515619811811616}
+  - {fileID: 3191144200218691549}
+  - {fileID: 2219086877750897100}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6780824903802162511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63584023757526355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb0713c6cf4a4e209b804f278abe413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiddenPictureDatas:
+  - {fileID: 11400000, guid: 0c44189083cbe4f0bbedc2b91ba88626, type: 2}
+  salePackDatas:
+  - {fileID: 11400000, guid: f57b0e1ba10a844029bcbaee8eb48a08, type: 2}
+  - {fileID: 11400000, guid: e4cc525bb7bc244209ae2708e666a49f, type: 2}
+  - {fileID: 11400000, guid: 5015dcdb9511f4ebbbaebba41c0590f6, type: 2}
+  luxuryBasketTargets: 14000000320000003200000050000000
+  quoteDatas:
+  - Growth begins at the edge of comfort.
+  - Every ending is a hidden beginning.
+  - Change is the only path to becoming more.
+  - "Adapt or remain unchanged\u2014your choice."
+  - The strongest trees grow against the wind.
+  - Every fall teaches you how to rise.
+  - To transform, you must first let go.
+  - "Step beyond fear, and you\u2019ll find freedom."
+  - The unknown is where growth lives.
+  - The future belongs to those who embrace change.
+  - A diamond is just carbon under pressure.
+  - Storms reveal the strength of your roots.
+  - Struggles shape, not break, the strong.
+  - Courage is fear that refuses to stop.
+  - What you endure, you overcome.
+  - You are stronger than the challenge ahead.
+  - Fire only refines the determined.
+  - The more you fall, the higher you bounce.
+  - Obstacles are just stepping stones in disguise.
+  - Your willpower writes your destiny.
+  - Your thoughts shape your reality.
+  - Nothing changes until you do.
+  - Perception defines what you see.
+  - A mountain is only tall if you fear it.
+  - You are only limited by what you believe.
+  - Your mind is either your prison or your wings.
+  - What you seek is seeking you.
+  - Fear disappears when you walk through it.
+  - Happiness is found in the now, not the next.
+  - The only chains that hold you back are the ones you refuse to break.
+  - Action turns dreams into reality.
+  - Success is built one step at a time.
+  - Every moment is a chance to begin again.
+  - A goal without action is just a wish.
+  - The journey matters more than the destination.
+  - "Winners don\u2019t wait; they create."
+  - Doubt kills more dreams than failure ever will.
+  - Your effort defines your outcome.
+  - Consistency beats talent when talent hesitates.
+  - The only impossible journey is the one never started.
+  - The river never fights the current, yet it carves the stone.
+  - True strength is knowing when to bend, not just when to stand.
+  - The best way to predict the future is to create it.
+  - The key to happiness is wanting what you have.
+  - What you give to the world, the world gives back to you.
+  - Time wasted regretting the past steals the present.
+  - The quietest minds hear the deepest truths.
+  - Simplicity is the ultimate sophistication.
+  - The journey of wisdom begins with curiosity.
+  - "You are the author of your own story\u2014write boldly."
+  - Growth begins where comfort ends.
+  - Every mistake is a lesson in disguise.
+  - The mind that opens to new ideas never returns to its original size.
+  - Fail fast, learn faster.
+  - Be stubborn about your goals, but flexible in your methods.
+  - "Knowledge is weightless\u2014carry as much as you can."
+  - Wisdom grows in silence, not in noise.
+  - The best investment is in yourself.
+  - If you stop learning, you stop living.
+  - What you seek is seeking you.
+  - Storms make trees grow deeper roots.
+  - "It\u2019s always too soon to quit."
+  - The best way out is always through.
+  - Turn your scars into wisdom.
+  - "You don\u2019t have to be fearless\u2014just be brave enough."
+  - The comeback is always stronger than the setback.
+  - Courage is grace under pressure.
+  - You are unbreakable, even when you feel shattered.
+  - The strongest steel is forged in the hottest fire.
+  - One step at a time is still forward.
+  - "Happiness is not a destination; it\u2019s a way of traveling."
+  - Joy is a choice, not a result.
+  - Gratitude turns what we have into enough.
+  - Some of the best moments in life are unplanned.
+  - Find joy in the ordinary.
+  - "You can\u2019t change the past, but you can shape the future."
+  - What you focus on expands.
+  - "Light tomorrow with today\u2019s sunshine."
+  - Your attitude determines your altitude.
+  - Peace begins with a single deep breath.
+  - Success is built on a thousand small victories.
+  - "Dreams don\u2019t work unless you do."
+  - Fortune favors the bold.
+  - "Don\u2019t just wish for it\u2014work for it."
+  - Winners focus on progress, not perfection.
+  - Chase your passion, not a paycheck.
+  - Your future is created by what you do today.
+  - Aim high, but stay grounded.
+  - The only limit is the one in your mind.
+  - Believe in yourself, even when no one else does.
+  - Live with intention, not just existence.
+  - A meaningful life is a life well-lived.
+  - We make a living by what we get, but a life by what we give.
+  - Your purpose is bigger than your fears.
+  - "Don\u2019t be busy, be productive."
+  - A full heart is richer than a full wallet.
+  - Live the story you want to tell.
+  - Find your why, and the how will follow.
+  - What you do today echoes in eternity.
+  - Your legacy is written in the hearts you touch.
+  - "Your mind is your greatest asset\u2014train it well."
+  - Doubt kills more dreams than failure ever will.
+  - You are what you think you are.
+  - Your thoughts create your reality.
+  - Energy flows where attention goes.
+  - Confidence is silent; insecurities are loud.
+  - "If you believe you can, you\u2019re halfway there."
+  - Every action starts with a single thought.
+  - The way you speak to yourself matters most.
+  - Your inner world shapes your outer world.
+  - Make time for what matters.
+  - "Don\u2019t wait for the right time\u2014make the time right."
+  - Nothing changes if nothing changes.
+  - The best time to start was yesterday. The next best time is now.
+  - Every moment is a fresh beginning.
+  - "Be patient\u2014great things take time."
+  - "You can\u2019t control time, but you can control how you use it."
+  - Every day is a second chance.
+  - Change is painful, but nothing is as painful as staying stuck.
+  - The seasons change, and so do you.
+  - Imagination is the blueprint of reality.
+  - Creativity is intelligence having fun.
+  - The world needs your unique perspective.
+  - Great ideas start with wild dreams.
+  - Art is the soul speaking.
+  - Innovation begins with curiosity.
+  - "Color outside the lines\u2014greatness is never confined."
+  - "Don\u2019t be afraid to rewrite the rules."
+  - "Your creativity is a gift\u2014use it."
+  - Dare to disrupt.
+  - Love is the answer, no matter the question.
+  - A kind word can change a life.
+  - "Be someone\u2019s reason to smile today."
+  - Kindness is never wasted.
+  - Love grows when shared.
+  - Give without expectation, love without condition.
+  - The smallest act of kindness is worth more than the grandest intention.
+  - Compassion is strength in disguise.
+  - Let love be your legacy.
+  - The world changes when hearts open.
+  - Not all who wander are lost.
+  - Adventure is the best way to learn.
+  - The only walls that exist are the ones you build in your mind.
+  - Go where you feel most alive.
+  - Take the risk or lose the chance.
+  - The horizon is only the beginning.
+  - "Live as if you\u2019ll die tomorrow. Learn as if you\u2019ll live forever."
+  - Explore more, worry less.
+  - "Your wings exist\u2014use them."
+  - Life is too short for regrets. Chase the sunrise.
+  - Strength comes from struggle.
+  - Your future is created by what you do today.
+  - Be the change you seek.
+  - Fear fades when you take action.
+  - Turn obstacles into opportunities.
+  - The only limits are the ones you accept.
+  - You are capable of more than you know.
+  - No rain, no flowers.
+  - Success is built one step at a time.
+  - "Your story isn\u2019t over yet."
+  - Keep moving forward, no matter how slow.
+  - Every day is a new chance to begin.
+  - Make peace with the past, build the future.
+  - The journey is as important as the destination.
+  - You become what you repeatedly do.
+  - Find joy in the ordinary.
+  - The only way to grow is to challenge yourself.
+  - What you give comes back to you.
+  - Make today count.
+  - The first step is the hardest, but the most important.
+  - Focus on progress, not perfection.
+  - Dream, believe, achieve.
+  - Your mindset shapes your world.
+  - Let go of what no longer serves you.
+  - "Take risks, or you\u2019ll always wonder."
+  - Every day is a new beginning.
+  - A grateful heart attracts more blessings.
+  - "You don\u2019t have to be perfect to be amazing."
+  - Every moment is an opportunity to grow.
+  - Be kind to yourself, too.
+  - The best view comes after the hardest climb.
+  - "Don\u2019t let fear decide your future."
+  - Live with purpose, not just routine.
+  - "You don\u2019t find yourself, you create yourself."
+  - A little progress each day adds up.
+  - Keep your head up and your heart strong.
+  - "Be proud of how far you\u2019ve come."
+  - Make your dreams bigger than your fears.
+  - Your energy introduces you before you speak.
+  - Storms pass, but strength remains.
+  - "Live today like it matters\u2014because it does."
+  - Be the hero of your own story.
+  - In the middle of difficulty lies opportunity.
+  - Rise, even when you fall.
+  - You are enough, just as you are.
+  - Great things never come from comfort zones.
+  - Patience and persistence lead to greatness.
+  - One step at a time still moves you forward.
+  - Believe in your infinite potential.
+  - Happiness is a journey, not a destination.
+  - Your only limit is the one you refuse to break.
+  - The best revenge is massive success.
+  - Growth starts where comfort ends.
+  - Live less out of habit and more out of intent.
+  - What you do today matters more than what you plan.
+  - A strong mind creates a strong life.
+  - "Let go of what you can\u2019t control."
+  - There is no failure, only feedback.
+  - Nothing is permanent, not even failure.
+  - Your scars are proof you survived.
+  - A heart full of gratitude knows no lack.
+  - "Dreams don\u2019t work unless you do."
+  - Success is the sum of small efforts repeated daily.
+  - Everything you want is on the other side of fear.
+  - You owe yourself the life you dream of.
+  - Stay hungry, stay foolish.
+  - "Your past doesn\u2019t define your future."
+  - "Turn the page, don\u2019t close the book."
+  - The only easy day was yesterday.
+  - "Doubt is a liar\u2014prove it wrong."
+  - Take the risk or lose the chance.
+  - Fail fast, learn faster.
+  - What you resist persists.
+  - No excuses, just results.
+  - Stay humble, hustle hard.
+  - Struggle today, strength tomorrow.
+  - "Your dreams are waiting\u2014chase them."
+  - Discipline beats motivation.
+  - Believe in your ability to figure it out.
+  - Action is the bridge between goals and success.
+  - "You\u2019re stronger than your worst day."
+  - Storms make warriors, not victims.
+  - Make peace with imperfection.
+  - Time spent doubting is time wasted.
+  - Hustle until your idols become your rivals.
+  - The magic happens outside your comfort zone.
+  - "You weren\u2019t born to be average."
+  - Your value is not up for debate.
+  - "Trust the process, even when it\u2019s unclear."
+  - "One day or day one\u2014you decide."
+  - Strength comes from overcoming, not avoiding.
+  - To grow, you must first let go.
+  - The fire inside you must burn brighter than the fire around you.
+  - Dare to stand out.
+  - Every journey begins with a single step.
+  - Defeat is not bitter unless you swallow it.
+  - "It always seems impossible until it\u2019s done."
+  - Mindset is the difference between winning and losing.
+  - "Your dreams don\u2019t have an expiration date."
+  - Consistency creates miracles.
+  - The harder the battle, the sweeter the victory.
+  - When nothing goes right, go left.
+  - The comeback is always stronger than the setback.
+  - "Your pain can shape you or break you\u2014choose wisely."
+  - "Take the next step, even if it\u2019s small."
+  - Strength is built, not given.
+  - Move in silence, let success speak.
+  - "A river never stops to push against a rock\u2014it flows around it."
+  - Stop waiting for permission.
+  - Live like you mean it.
+  - Obstacles are just detours in the right direction.
+  - "If you\u2019re tired, learn to rest, not quit."
+  - Happiness is a choice, not a destination.
+  - Make your future self proud.
+  - Rise up, even when you fall.
+  - Winners never quit, quitters never win.
+  - Make every second count.
+  - Be fearless in pursuit of what sets your soul on fire.
+  - Some doors only open when you knock.
+  - A warrior is just an ordinary person who refuses to quit.
+  - Difficult roads lead to beautiful destinations.
+  - You are the author of your own story.
+  - What you allow is what will continue.
+  - Your vibe attracts your tribe.
+  - A winner is just a loser who tried one more time.
+  - Success is a decision, not a gift.
+  - "If you want to fly, let go of what\u2019s weighing you down."
+  - "Don\u2019t count the days, make the days count."
+  - "No one can take your place in this world\u2014own it."
+  - "You\u2019re not too old, and it\u2019s not too late."
+  - See the possibilities, not the limitations.
+  - Let your light shine unapologetically.
+  - You are what you repeatedly do.
+  - Get comfortable being uncomfortable.
+  - Every masterpiece starts as a blank canvas.
+  - Perfection is the enemy of progress.
+  - "Never regret a day\u2014good days bring happiness, bad days bring lessons."
+  - Your attitude shapes your reality.
+  - What you believe, you become.
+  - A tiny spark can start a great fire.
+  - To change the world, start with yourself.
+  - Opportunities multiply when you take them.
+  - Your best is yet to come.
+  - Act like the person you want to become.
+  - Let faith be bigger than your fear.
+  - "You didn\u2019t come this far to only come this far."
+  - Sometimes losing is winning in disguise.
+  - "Build a life you don\u2019t need a vacation from."
+  - "Don\u2019t be afraid to start over\u2014it\u2019s a new chance to build better."
+  - Live fully, love deeply, and laugh often.
+  playerNameDatas:
+  - Alexander Jameson
+  - Benjamin Carter
+  - Charles Montgomery
+  - Daniel Harrison
+  - Edward Sinclair
+  - Amelia Kensington
+  - Beatrice Montgomery
+  - Charlotte Emerson
+  - Daisy Holloway
+  - Eleanor Whitmore
+  - Frederick Wallace
+  - George Anderson
+  - Henry Calloway
+  - Isaac Thompson
+  - James Whitmore
+  - Kenneth Sullivan
+  - Lucas Bennett
+  - Matthew Donovan
+  - Nathaniel Fletcher
+  - Oliver Westwood
+  - Patrick Reynolds
+  - Quentin Maxwell
+  - Robert Langston
+  - Samuel Prescott
+  - Thomas Wilkins
+  - Ulysses Grant
+  - Victor Holloway
+  - William Bradford
+  - Xavier Coleman
+  - Zachary Thornton
+  - Florence Sinclair
+  - Grace Harrington
+  - Hannah Calloway
+  - Isabelle Carrington
+  - Julia Kensington
+  - Katherine Delaney
+  - Lily Pembroke
+  - Margaret Ellington
+  - Natalie Sterling
+  - Olivia Westwood
+  - Penelope Langston
+  - Quinn Mercer
+  - Rose Abernathy
+  - Sophia Whitman
+  - Tiffany Caldwell
+  - Ursula Winslow
+  - Violet Prescott
+  - Willow Callister
+  - Xena Montgomery
+  - Zoe Fitzgerald
+  - Adrian Chambers
+  - Brandon McAllister
+  - Christopher Vaughn
+  - Dominic Sterling
+  - Elijah Mercer
+  - Finn Callahan
+  - Gavin Hughes
+  - Harrison Whitaker
+  - Ian Kingsley
+  - Jonah Mitchell
+  - Kevin Whitman
+  - Leo Cunningham
+  - Mason Delaney
+  - Noah Fitzgerald
+  - Owen Lancaster
+  - Preston Matthews
+  - Ryan Callister
+  - Sebastian Vaughn
+  - Tristan Ellington
+  - Vincent Holloway
+  - Wesley Franklin
+  - Ethan Beaumont
+  - Julian Carrington
+  - Logan Monroe
+  - Theodore Hawthorne
+  - Abigail Thornton
+  - Bella Kensington
+  - Cecilia Vaughn
+  - Delilah Sinclair
+  - Emily Hawthorne
+  - Fiona Bradford
+  - Gabriella Monroe
+  - Hazel Kensington
+  - Ivy Cunningham
+  - Jasmine Holloway
+  - Kiera Matthews
+  - Layla Whitaker
+  - Mia Callahan
+  - Nora Lancaster
+  - Ophelia Kingsley
+  - Paige Ellington
+  - Rachel Sterling
+  - Savannah Beaumont
+  - Tessa Whitmore
+  - Uma Langston
+  - Vanessa Holloway
+  - Wendy Carrington
+  - Yvonne Mercer
+  - Zariah Delaney
+  - Aurora Kensington
+  avatars:
+  - {fileID: 11400000, guid: 94c8c64c4f0b1467d96881c989fb02b9, type: 2}
+  - {fileID: 11400000, guid: 5d68fe71eb9624833a33b1ad6b1d11cb, type: 2}
+  - {fileID: 11400000, guid: 95e7f328306214642b4929f63a8345a5, type: 2}
+  - {fileID: 11400000, guid: 90196d5af6be24287937dfef3e28ff23, type: 2}
+  - {fileID: 11400000, guid: 9d21df201e3c9479784f1d7443ab5b29, type: 2}
+  - {fileID: 11400000, guid: 983519bebdf644e01a312889be51d378, type: 2}
+  - {fileID: 11400000, guid: 031d31faf637e4b989f1852783865c87, type: 2}
+  - {fileID: 11400000, guid: 550171516a083405990977b7ceffe90f, type: 2}
+  - {fileID: 11400000, guid: 1273a1435bb5e4d69bd25aad0abcb218, type: 2}
+  - {fileID: 11400000, guid: b0f6d0d5c2dad498bb321e499b838fe1, type: 2}
+  - {fileID: 11400000, guid: 6c96da71565a5441b8fd2423da7f50a8, type: 2}
+  - {fileID: 11400000, guid: 0692001cd483749ce8693b50206cecd0, type: 2}
+  - {fileID: 11400000, guid: 4f08765112a5f467a8d1c4ea3840a292, type: 2}
+  - {fileID: 11400000, guid: 20f125a50e0834460bbfd7fc65a85c70, type: 2}
+  - {fileID: 11400000, guid: 6ae7d36f5931f4f369fb6b9fd1c65b8a, type: 2}
+  - {fileID: 11400000, guid: b04acc9bae7624068964966263340751, type: 2}
+  - {fileID: 11400000, guid: b5967db4718c14039b59d056edafdadf, type: 2}
+  - {fileID: 11400000, guid: ac7b5acbdec974ccfaabdf12a82120ea, type: 2}
+  frames:
+  - {fileID: 11400000, guid: 350fbba98cd4b42f0ab5603796594210, type: 2}
+  - {fileID: 11400000, guid: ebc7d3d397a594672b1ffe2f3606007a, type: 2}
+  - {fileID: 11400000, guid: 0adfbdc35dc4d4c85af817d5f74dd484, type: 2}
+  - {fileID: 11400000, guid: 410957d94e0d6415fa2859b3a46b1027, type: 2}
+  - {fileID: 11400000, guid: 7d309468472214cb8ac00ef3e23567c9, type: 2}
+  - {fileID: 11400000, guid: a948d1caaa4664c6a91a1e1837967c1e, type: 2}
+  - {fileID: 11400000, guid: 94760174fa1404e778d57c69d042ad4f, type: 2}
+  - {fileID: 11400000, guid: 1f2778fabeccd465f81abc4f2994cd7f, type: 2}
+  - {fileID: 11400000, guid: bff601594b65b4345bbe4179d4078781, type: 2}
+  frameBackgrounds:
+  - {fileID: 21300000, guid: 5099fd67be8dc47039c87654bc74d348, type: 3}
+  - {fileID: 21300000, guid: ea50f332b39bc436291f1d509ee41802, type: 3}
+  - {fileID: 21300000, guid: d6222909695794b5cbfc04eeed0ec9ca, type: 3}
+  - {fileID: 21300000, guid: 6d554af631fa2417f86a4a1df2c04457, type: 3}
+  - {fileID: 21300000, guid: 3d113e210f70a47f6a3d47079f2b5c99, type: 3}
+  - {fileID: 21300000, guid: 919349bfb35434703b2238264c55605d, type: 3}
+  - {fileID: 21300000, guid: b0954398ff8bf4f02bb53bac8a18a283, type: 3}
+  - {fileID: 21300000, guid: d18bfe55c4f07499c99e1eebac69bd71, type: 3}
+  - {fileID: 21300000, guid: 1f4614de9fae64674a264c1ca9f3bb38, type: 3}
+--- !u!1 &492469593929524033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4574351946689024612}
+  - component: {fileID: 8328703763966283328}
+  m_Layer: 0
+  m_Name: BoosterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4574351946689024612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492469593929524033}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8328703763966283328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492469593929524033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfee3bed780ff41118db6979ac2a2fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1190001463294763088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8872391339190657955}
+  - component: {fileID: 3862710395640596355}
+  m_Layer: 0
+  m_Name: LocalizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8872391339190657955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190001463294763088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3862710395640596355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190001463294763088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e98c278210f4edd978820730799a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLanguage: en
+  fontConfig: {fileID: 11400000, guid: 05b22585a52434b34a396f832698b6a4, type: 2}
+--- !u!1 &3443478609023468234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156606020894998411}
+  - component: {fileID: 3734098517328972139}
+  m_Layer: 0
+  m_Name: RewardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156606020894998411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443478609023468234}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3734098517328972139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443478609023468234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f274aa9b47f412c8d6381aed43aa91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3688178072068313670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298515619811811616}
+  - component: {fileID: 783198320936569003}
+  m_Layer: 0
+  m_Name: RewardGainController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298515619811811616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688178072068313670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783198320936569003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688178072068313670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a2b59f3e27f4db9a0be579dfb23316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4889752176619439898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8891617232831878169}
+  - component: {fileID: 7923291817477440990}
+  m_Layer: 0
+  m_Name: PlayerDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8891617232831878169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889752176619439898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7923291817477440990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889752176619439898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e53a4ade47cc4250a04c3b158d6d78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8669889932127056621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2219086877750897100}
+  - component: {fileID: 458059090640100660}
+  m_Layer: 0
+  m_Name: HiddenPictureManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2219086877750897100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669889932127056621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &458059090640100660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669889932127056621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b750ee448eb9b4dd8a72e225e654d221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8856403321622449882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3191144200218691549}
+  - component: {fileID: 8724315590965528585}
+  m_Layer: 0
+  m_Name: StarRushManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3191144200218691549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856403321622449882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3973839271325784177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8724315590965528585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856403321622449882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29067e4fdfc8b43f3930b4b1678f2a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36f6115d4b0545f4ab9e1a35b732371, type: 3}
+  m_Name: 4-Tutorial-Stack
+  m_EditorClassIdentifier: 
+  showType: 1
+  showInGame: 1
+  preNotice: 0
+  isBooster: 0
+  autoClose: 1
+  showCloseButton: 0
+  autoCloseIn: 6
+  id: 4
+  level: 6
+  wave: 1
+  image: {fileID: 21300000, guid: 4139cc2c529124c7c8e7138807337d4e, type: 3}
+  iconInButton: {fileID: 0}
+  key: ele_stack
+  message: <color=#04266F>Stacks</color> will <color=#04266F>contain</color> a number
+    of <color=#04266F>coils</color>
+  messageWithoutImage: <color=#04266F>Stacks</color> <sprite=10> will <color=#04266F>contain</color>
+    a number of <color=#04266F>coils</color>
+  title: Coil Stack
+  spriteAsset: {fileID: 11400000, guid: 10121fc8fbefd41ff9db29b153bd9a6a, type: 2}
+  skeletonData: {fileID: 11400000, guid: 55dce07751d634e49b4992ce7aebbae5, type: 2}

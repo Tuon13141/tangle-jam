@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36f6115d4b0545f4ab9e1a35b732371, type: 3}
+  m_Name: Tutorial-IntroHiddenPicture
+  m_EditorClassIdentifier: 
+  showType: 0
+  showInGame: 0
+  preNotice: 0
+  isBooster: 0
+  autoClose: 0
+  showCloseButton: 0
+  autoCloseIn: 3
+  id: -1
+  level: -1
+  wave: -1
+  image: {fileID: 21300000, guid: e8d7346e44efa4efbafa51c4ae5ffc1e, type: 3}
+  iconInButton: {fileID: 0}
+  key: hidden-picture
+  message: New event <color=#E21C24>Hidden Picture</color> unlocked! Discover paintings
+    and earn rewards!
+  messageWithoutImage: 
+  title: New Event
+  spriteAsset: {fileID: 11400000, guid: 10121fc8fbefd41ff9db29b153bd9a6a, type: 2}

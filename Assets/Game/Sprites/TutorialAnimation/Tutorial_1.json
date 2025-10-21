@@ -1,0 +1,112 @@
+{
+"skeleton": {
+	"hash": "2RUok9FxB50",
+	"spine": "4.2.35",
+	"x": -345.21,
+	"y": -181.16,
+	"width": 690,
+	"height": 362,
+	"images": "./Images/",
+	"audio": "D:/Work/PROJECT/Tangle Frenzy/Tutorial_1/Images"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "all", "parent": "root" },
+	{ "name": "Layer 2 1 copy", "parent": "all", "x": -228.62, "y": -0.37, "color": "a2e90dff", "icon": "arrowsB" },
+	{ "name": "Layer 2 1 copy2", "parent": "all", "x": -1.11, "y": -0.37, "color": "a2e90dff", "icon": "arrowsB" },
+	{ "name": "Layer 2 1 copy3", "parent": "all", "x": 225.35, "y": -0.37, "color": "a2e90dff", "icon": "arrowsB" }
+],
+"slots": [
+	{ "name": "Tutorial Merge", "bone": "all", "attachment": "Tutorial Merge" },
+	{ "name": "Layer 2 1", "bone": "Layer 2 1 copy2", "attachment": "Layer 2 1" },
+	{ "name": "Layer 2 1 copy", "bone": "Layer 2 1 copy", "attachment": "Layer 2 1 copy" },
+	{ "name": "Layer 2 1 copy 2", "bone": "Layer 2 1 copy3", "attachment": "Layer 2 1 copy 2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 2 1": {
+				"Layer 2 1": { "x": 0.9, "y": 0.21, "width": 136, "height": 164 }
+			},
+			"Layer 2 1 copy": {
+				"Layer 2 1 copy": { "x": 2.41, "y": 0.21, "width": 136, "height": 164 }
+			},
+			"Layer 2 1 copy 2": {
+				"Layer 2 1 copy 2": { "x": 0.44, "y": 0.21, "width": 136, "height": 164 }
+			},
+			"Tutorial Merge": {
+				"Tutorial Merge": { "x": -0.21, "y": -0.16, "width": 690, "height": 362 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"Layer 2 1 copy": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.266, 98.18, 0.083, 0, 0.266, 0 ]
+					},
+					{ "time": 0.3333, "x": 226.2 }
+				],
+				"scale": [
+					{
+						"time": 0.3333,
+						"curve": [ 0.352, 1.289, 0.475, 1.666, 0.352, 1.289, 0.475, 1.666 ]
+					},
+					{
+						"time": 0.5333,
+						"x": 1.666,
+						"y": 1.666,
+						"curve": [ 0.558, 1.666, 0.608, 1.551, 0.558, 1.666, 0.608, 1.551 ]
+					},
+					{ "time": 0.6333, "x": 1.551, "y": 1.551 }
+				]
+			},
+			"Layer 2 1 copy2": {
+				"scale": [
+					{
+						"time": 0.3333,
+						"curve": [ 0.352, 1.289, 0.475, 1.666, 0.352, 1.289, 0.475, 1.666 ]
+					},
+					{
+						"time": 0.5333,
+						"x": 1.666,
+						"y": 1.666,
+						"curve": [ 0.558, 1.666, 0.608, 1.551, 0.558, 1.666, 0.608, 1.551 ]
+					},
+					{ "time": 0.6333, "x": 1.551, "y": 1.551 }
+				]
+			},
+			"Layer 2 1 copy3": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.266, -97.82, 0.083, 0, 0.266, 0 ]
+					},
+					{ "time": 0.3333, "x": -225.37 }
+				],
+				"scale": [
+					{
+						"time": 0.3333,
+						"curve": [ 0.352, 1.289, 0.475, 1.666, 0.352, 1.289, 0.475, 1.666 ]
+					},
+					{
+						"time": 0.5333,
+						"x": 1.666,
+						"y": 1.666,
+						"curve": [ 0.558, 1.666, 0.608, 1.551, 0.558, 1.666, 0.608, 1.551 ]
+					},
+					{ "time": 0.6333, "x": 1.551, "y": 1.551 }
+				]
+			},
+			"all": {
+				"translate": [
+					{ "time": 0.9667 }
+				]
+			}
+		}
+	}
+}
+}
