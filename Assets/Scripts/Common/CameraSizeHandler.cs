@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CameraSizeHandler : Kit.Common.Singleton<CameraSizeHandler>
 {
@@ -23,6 +22,8 @@ public class CameraSizeHandler : Kit.Common.Singleton<CameraSizeHandler>
     private Vector2 camSize;
 
     private Vector3 initPosition;
+
+    [SerializeField] private float cameraZOffset = -2f;
 
 
     protected override void Awake()
@@ -114,7 +115,13 @@ public class CameraSizeHandler : Kit.Common.Singleton<CameraSizeHandler>
 
         var view = GetZoneView();
 
-        if (topObject != null) topObject.position = new Vector3(0, 0, view.Item2.position.y + view.Item2.size.y / 2 + topOffset);
-        if (bottomObject != null) bottomObject.position = new Vector3(0, 0, view.Item2.position.y - view.Item2.size.y / 2 + bottomOffset);
+        // Apply camera Z offset
+        cam.transform.localPosition = initPosition + new Vector3(0, 0, cameraZOffset);
+
+        if (topObject != null)
+            topObject.position = new Vector3(0, 0, view.Item2.position.y + view.Item2.size.y / 2 + topOffset);
+
+        if (bottomObject != null)
+            bottomObject.position = new Vector3(0, 0, view.Item2.position.y - view.Item2.size.y / 2 + bottomOffset);
     }
 }
