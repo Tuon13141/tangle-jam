@@ -2,7 +2,7 @@ using NaughtyAttributes;
 using System.IO;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LevelAsset", menuName = "SOLevel/LevelAsset", order = 0)]
+[CreateAssetMenu(fileName = "LevelAsset-Old", menuName = "SOLevel/LevelAsset-Old", order = 0)]
 public sealed class LevelAsset : ScriptableObject
 {
     [Expandable]
@@ -100,7 +100,7 @@ public sealed class LevelAsset : ScriptableObject
         KeyLock = 5,
         PinWall = 6,
     }
-    
+
     public enum Difficulty
     {
         Easy = 0,
