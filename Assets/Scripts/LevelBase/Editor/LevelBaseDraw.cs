@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -127,7 +126,7 @@ public class LevelBaseDraw : Editor
 
         if (levelBase.Stages == null || levelBase.Slices == null)
         {
-            levelBase.Slices = new[] {32};
+            levelBase.Slices = new[] { 32 };
             return;
         }
         if (levelBase.Stages.Length != 0 && currentStageIndex < levelBase.Stages.Length - 1)
@@ -135,8 +134,8 @@ public class LevelBaseDraw : Editor
             currentGridSize = new Vector2Int(levelBase.Stages[currentStageIndex].Width, levelBase.Stages[currentStageIndex].Height);
         }
 
-        if(levelBase.PixelData?.Colors == null) return;
-        if(levelBase.PixelData?.Data == null) return;
+        if (levelBase.PixelData?.Colors == null) return;
+        if (levelBase.PixelData?.Data == null) return;
         var colorList = levelBase.PixelData.Colors.Select(x => ColorUtility.ToHtmlStringRGB(x)).ToList();
         var colorListCheck = colorManager.coilColorMaterial.Select(x => ColorUtility.ToHtmlStringRGB(x.Value1)).ToList();
         Debug.Log(colorListCheck.Count());
@@ -257,7 +256,7 @@ public class LevelBaseDraw : Editor
             colorManager.newColors = colorList.Except(colorListCheck).Select(x => ColorUtility.TryParseHtmlString("#" + x, out var color) ? color : Color.white).ToList();
             EditorUtility.SetDirty(colorManager);
         }
-        
+
         EditorGUILayout.HelpBox("Good Job!", MessageType.Info);
 
         GUI.enabled = false;
@@ -275,7 +274,7 @@ public class LevelBaseDraw : Editor
             if (oldTexture != null)
             {
                 EditorGUILayout.ObjectField("Old Texture:", oldTexture, typeof(Texture2D), false);
-                
+
                 GUI.enabled = false;
                 EditorGUILayout.TextArea(analyticPicture);
                 GUI.enabled = true;
@@ -614,8 +613,8 @@ public class LevelBaseDraw : Editor
             {
                 Color color = levelBase.PixelData.Colors[i];
 
-                if(colorsInStage[currentStageIndex].list.Contains(color) == false) continue;
-                
+                if (colorsInStage[currentStageIndex].list.Contains(color) == false) continue;
+
                 // Display color button
                 UnityEngine.GUI.backgroundColor = (colorSelect == i) ? Color.gray : Color.white;
                 if (GUILayout.Button(MakeTex(color), GUILayout.Width(squareSize), GUILayout.Height(squareSize)))
@@ -679,7 +678,7 @@ public class LevelBaseDraw : Editor
             if (EditorGUILayout.ToggleLeft("Right", directionSelect == StageData.Direction.Right, GUILayout.Width(2 * squareSize), GUILayout.Height(squareSize))) directionSelect = StageData.Direction.Right;
         }
         EditorGUILayout.EndHorizontal();
-        
+
         EditorGUILayout.LabelField("Tutorial");
         var rect = EditorGUILayout.GetControlRect(GUILayout.Width(150), GUILayout.Height(squareSize));
         if (EditorGUI.DropdownButton(rect, new GUIContent(levelBase.Stages[currentStageIndex].tutorialType.ToString()), FocusType.Keyboard))
@@ -694,7 +693,7 @@ public class LevelBaseDraw : Editor
             }
             menu.DropDown(rect);
         }
-        
+
         EditorGUILayout.LabelField("Difficulty");
         var rect1 = EditorGUILayout.GetControlRect(GUILayout.Width(150), GUILayout.Height(squareSize));
         if (EditorGUI.DropdownButton(rect1, new GUIContent(levelBase.Stages[currentStageIndex].difficulty.ToString()), FocusType.Keyboard))
@@ -1006,7 +1005,7 @@ public class LevelBaseDraw : Editor
             result[i] = int.MinValue;
 
         // Hàm tính khoảng cách Manhattan
-        float Distance(Vector2Int a, Vector2Int b) => 
+        float Distance(Vector2Int a, Vector2Int b) =>
             Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
 
         foreach (var g in groups)

@@ -97,7 +97,6 @@ namespace Tuon
             return result;
         }
 
-        SerializedProperty sliceList;
         SerializedProperty backgroundColor;
         SerializedProperty isHard;
         SerializedProperty disableRandom;
@@ -107,7 +106,6 @@ namespace Tuon
         {
             levelBase = (LevelAsset)target;
 
-            sliceList = serializedObject.FindProperty("Slices");
             backgroundColor = serializedObject.FindProperty("BackgroundColor");
             isHard = serializedObject.FindProperty("IsHard");
             disableRandom = serializedObject.FindProperty("DisableRandom");
@@ -125,8 +123,10 @@ namespace Tuon
             icon_lock = Resources.Load<Texture2D>("lock");
 
             colorManager = Resources.Load<ColorManager>("ColorManager");
+            if (colorManager == null) Debug.LogError("ColorManager not found !");
 
             currentGridSize = new Vector2Int(levelBase.Stage.Width, levelBase.Stage.Height);
+            Debug.Log("CURRENT GRID SIZE " + currentGridSize);
 
             if (levelBase.PixelData?.Colors == null) return;
             if (levelBase.PixelData?.Data == null) return;
@@ -134,7 +134,7 @@ namespace Tuon
             var colorListCheck = colorManager.coilColorMaterial.Select(x => ColorUtility.ToHtmlStringRGB(x.Value1)).ToList();
             Debug.Log(colorListCheck.Count());
 
-            var check = colorList.Except(colorListCheck).Any();
+            bool check = colorList.Except(colorListCheck).Any();
             if (check)
             {
                 hasNewColor = true;
@@ -175,7 +175,6 @@ namespace Tuon
         {
             if (levelBase.Stage == null)
             {
-                levelBase.Stage = new();
                 return;
             }
             SetHotKey();
@@ -191,10 +190,6 @@ namespace Tuon
             serializedObject.ApplyModifiedProperties();
 
             EditorGUILayout.HelpBox("Good Job!", MessageType.Info);
-
-            var tempStage = new StageData();
-
-            levelBase.Stage = tempStage;
 
             DrawExtension.DrawHorizontalLine();
 
@@ -276,17 +271,42 @@ namespace Tuon
             if (GUILayout.Button("Setup Picture"))
             {
                 var gridColors = Extract64Colors(texture);
+
                 var grouped = gridColors.GroupBy(x => ColorUtility.ToHtmlStringRGB(x)).ToList();
-                Debug.Log(grouped.Count());
-                //ColorUtility.ToHtmlStringRGB(color);
+                Debug.Log("Picture's total color found : " + grouped.Count());
+
                 var colorList = grouped.Select(x => x.Key).ToList();
                 levelBase.PixelData.Colors = grouped.Select(x => x.First()).ToArray();
 
-                levelBase.PixelData.Data = gridColors.Select(x => ((byte)colorList.IndexOf(ColorUtility.ToHtmlStringRGB(x)))).ToArray();
-                // m_GridColorPicker.ApplyGridColors();
-                var colorListCheck = colorManager.coilColorMaterial.Select(x => ColorUtility.ToHtmlStringRGB(x.Value1)).ToList();
-                Debug.Log(colorListCheck.Count());
+                levelBase.PixelData.Data = gridColors
+                    .Select(x => (byte)colorList.IndexOf(ColorUtility.ToHtmlStringRGB(x)))
+                    .ToArray();
 
+                Debug.Log(levelBase.PixelData.Data.Length);
+
+                var colorListCheck = colorManager.coilColorMaterial
+                    .Select(x => ColorUtility.ToHtmlStringRGB(x.Value1))
+                    .ToList();
+
+                Debug.Log("Check list color count: " + colorListCheck.Count());
+
+                /* ----- DEBUG TOÀN BỘ 2 LIST -----
+                // In colorList
+                //Debug.Log("colorList:");
+                //for (int i = 0; i < colorList.Count; i++)
+                //{
+                //    Debug.Log($"[{i}] {colorList[i]}");
+                //}
+
+                //// In colorListCheck
+                //Debug.Log("colorListCheck:");
+                //for (int i = 0; i < colorListCheck.Count; i++)
+                //{
+                //    Debug.Log($"[{i}] {colorListCheck[i]}");
+                //}
+                */
+
+                // Kiểm tra khác nhau
                 var check = colorList.Except(colorListCheck).Any();
                 if (check)
                 {
@@ -295,25 +315,32 @@ namespace Tuon
 
                 CheckColor();
                 Debug.Log("Gen Done!");
+                Debug.Log("Current grid size " + currentGridSize);
+                Debug.Log("Current level grid size " + levelBase.Stage.Width + " " + levelBase.Stage.Height);
                 oldTexture = texture;
+
             }
         }
 
         void CheckColor()
         {
-            if (levelBase.PixelData?.Colors == null) return;
+            if (levelBase.PixelData?.Colors == null)
+            {
+                Debug.LogError("NULL CHECK COLOR ");
+                return;
+            }
+
+            Debug.Log("===Check Color===");
 
             colorsInStage = new List<Color>();
 
             List<Color> colorList = levelBase.PixelData.Colors.ToList();
+            Debug.Log("Color List Count : " + colorList.Count);
+
             List<Color> pixelColorsInStage = new List<Color>();
             string s = string.Empty;
 
-            var a1 = 32;
-            var a2 = 32;
-
-            pixelColorsInStage.Clear();
-            for (int y = a1 - 1; y >= a2; y--)
+            for (int y = 31; y >= 0; y--)
             {
                 for (int x = 0; x < 32; x++)
                 {
@@ -321,12 +348,14 @@ namespace Tuon
                 }
             }
 
+            Debug.Log("Pixel Color In Stage : " + pixelColorsInStage.Count);
+
             var group = pixelColorsInStage.GroupBy(x => x);
 
-            s = string.Format("{0}\n - slice {1}: {4} | {2} -> {3}", s, 1, group.Count(), string.Join(",", group.Select(x => colorList.IndexOf(x.First())).OrderBy(x => x).ToArray()), pixelColorsInStage.Count);
+            s = string.Format("{0}\n - {1}: {4} | {2} -> {3}", s, "pixel", group.Count(), string.Join(",", group.Select(x => colorList.IndexOf(x.First())).OrderBy(x => x).ToArray()), pixelColorsInStage.Count);
             colorsInStage.AddRange(new List<Color>(group.Select(x => x.First()).ToList()));
 
-            analyticPicture = string.Format("Count Slices: {0}\n {1} ", 1, s);
+            analyticPicture = string.Format("{0} ", s);
         }
 
         List<Color> Extract64Colors(Texture2D sourceTexture)
@@ -386,6 +415,13 @@ namespace Tuon
 
         void TopGroup()
         {
+            GUILayout.BeginHorizontal();
+            {
+                //currentGridSize = new Vector2Int(levelBase.Stage.Width, levelBase.Stage.Height);
+            }
+            GUILayout.EndHorizontal();
+
+
             GUILayout.Space(15);
             GUILayout.BeginHorizontal();
             {
@@ -398,6 +434,8 @@ namespace Tuon
                         levelBase.Stage.Width = currentGridSize.x;
                         levelBase.Stage.Height = currentGridSize.y;
                         levelBase.Stage.Data = new StageData.CellData[currentGridSize.x * currentGridSize.y];
+                        Debug.Log($"New Stage Data : " + levelBase.Stage.Height + " " + levelBase.Stage.Width);
+
                         for (int i = 0; i < levelBase.Stage.Data.Length; i++) { levelBase.Stage.Data[i] = new StageData.CellData(); }
                     }
                 }
@@ -414,7 +452,11 @@ namespace Tuon
         {
             GUILayout.BeginVertical();
             {
-                if (levelBase.Stage == null) return;
+                if (levelBase.Stage == null)
+                {
+                    Debug.LogWarning("Stage null");
+                    return;
+                }
 
                 var stage = levelBase.Stage;
 
@@ -630,7 +672,7 @@ namespace Tuon
             if (EditorGUI.DropdownButton(rect, new GUIContent(levelBase.Stage.tutorialType.ToString()), FocusType.Keyboard))
             {
                 var menu = new GenericMenu();
-                foreach (global::LevelAsset.TutorialType type in System.Enum.GetValues(typeof(global::LevelAsset.TutorialType)))
+                foreach (LevelAsset.TutorialType type in System.Enum.GetValues(typeof(LevelAsset.TutorialType)))
                 {
                     menu.AddItem(new GUIContent(type.ToString()), levelBase.Stage.tutorialType == type, () =>
                     {
@@ -645,7 +687,7 @@ namespace Tuon
             if (EditorGUI.DropdownButton(rect1, new GUIContent(levelBase.Stage.difficulty.ToString()), FocusType.Keyboard))
             {
                 var menu = new GenericMenu();
-                foreach (global::LevelAsset.Difficulty type in System.Enum.GetValues(typeof(global::LevelAsset.Difficulty)))
+                foreach (LevelAsset.Difficulty type in System.Enum.GetValues(typeof(LevelAsset.Difficulty)))
                 {
                     menu.AddItem(new GUIContent(type.ToString()), levelBase.Stage.difficulty == type, () =>
                     {
@@ -903,7 +945,7 @@ namespace Tuon
             }
             EditorUtility.SetDirty(levelBase);
         }
-        public List<int> Randomize(List<int> input, global::LevelAsset.Difficulty difficulty, List<Vector2Int> coilPos)
+        public List<int> Randomize(List<int> input, LevelAsset.Difficulty difficulty, List<Vector2Int> coilPos)
         {
             // Copy list để không làm thay đổi list gốc
             List<int> list = new List<int>(input);
@@ -913,24 +955,24 @@ namespace Tuon
 
             switch (difficulty)
             {
-                case global::LevelAsset.Difficulty.Easy:
+                case LevelAsset.Difficulty.Easy:
                     // Gom nhóm các số giống nhau lại gần nhau (sắp xếp tăng dần)
                     list = list.OrderBy(x => x).ToList();
                     break;
 
-                case global::LevelAsset.Difficulty.Normal:
+                case LevelAsset.Difficulty.Normal:
                     // Giữ nguyên shuffle (random đều)
                     break;
 
-                case global::LevelAsset.Difficulty.Hard:
+                case LevelAsset.Difficulty.Hard:
                     list = SpreadOut(list, coilPos, 2); // cách nhau >= 2 ô nếu có thể
                     break;
 
-                case global::LevelAsset.Difficulty.VeryHard:
+                case LevelAsset.Difficulty.VeryHard:
                     list = SpreadOut(list, coilPos, 3);
                     break;
 
-                case global::LevelAsset.Difficulty.Insane:
+                case LevelAsset.Difficulty.Insane:
                     list = SpreadOut(list, coilPos, 4);
                     break;
 
@@ -1061,7 +1103,6 @@ namespace Tuon
                     var dataElement = stageMap.Data[y * stageMap.Width + x];
                     if (dataElement.Type == StageData.CellType.Coil || dataElement.Type == StageData.CellType.CoilLocked || dataElement.Type == StageData.CellType.CoilPair)
                     {
-
                         var result = Utils.FindPath(map, new Vector2Int(x, y), out Stack<Vector2Int> stackOut, out int totalCost);
                         if (result)
                         {
@@ -1117,7 +1158,6 @@ namespace Tuon
                 var stackIndex = stageMap.Data[stackPos.y * stageMap.Width + stackPos.x].Value;
                 cointMove += (int)(coilValueTaget * stackIndex + Static.TriangularNumber(stackIndex - 1));
 
-
                 var listColorInTube = dataElement.String.Split(",").Select(x => int.Parse(x)).ToList();
                 for (int j = 0; j < listColorInTube.Count; j++)
                 {
@@ -1140,14 +1180,7 @@ namespace Tuon
                 if (excessColors.Count > 0) Debug.LogError($"stage 0 - {string.Join(",", excessColors.Select(x => colorList.IndexOf(x).ToString()))}");
             }
 
-            foreach (var element in group)
-            {
-                var count = element.Count() % 3;
-                if (count != 0)
-                {
-                    Debug.LogError($"Stage 0 - Missing Color: {element.Key} -> count: {3 - count}");
-                }
-            }
+            // **Đã bỏ đoạn kiểm tra chia 3 dư ở đây**
 
             Dictionary<int, List<Vector2Int>> colorGroups = listCoil.GroupBy(e => e.color)
                                                                     .ToDictionary(g => g.Key, g => g.Select(e => e.pos).ToList());
@@ -1182,5 +1215,6 @@ namespace Tuon
 
             analyticLevel = string.Format("Count Stage: {0}\n {1} ", 1, s);
         }
+
     }
 }

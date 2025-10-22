@@ -1,11 +1,9 @@
-using System;
+using Percas.Data;
+using PercasSDK;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using Percas.Data;
-using Sdk.Google.NativeAds;
-using PercasSDK;
 
 namespace Percas
 {
@@ -13,6 +11,7 @@ namespace Percas
     {
         [SerializeField] TMP_Text textLoadingValue;
         [SerializeField] GameObject bg1, bg2;
+        [SerializeField] int scene;
 
         private bool loading = true;
 
@@ -47,7 +46,7 @@ namespace Percas
             Debug.Log($"abcabc: {Static.isActiveNewMode}");
             if (Static.isActiveNewMode && !Static.isPlayDoneNewMode)
             {
-                operation = SceneManager.LoadSceneAsync("GamePlayScene");
+                operation = SceneManager.LoadSceneAsync(scene);
             }
 
             else if (GameLogic.CurrentLevel < GameLogic.LevelUnlockHome)
