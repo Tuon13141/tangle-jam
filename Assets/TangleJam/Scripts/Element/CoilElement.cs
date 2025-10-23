@@ -164,19 +164,12 @@ namespace Tuon
 
         public void ChangeColor(Color color)
         {
-            // if (mpb == null) mpb = new MaterialPropertyBlock();
-            // mpb.SetColor("_BaseColor", color);
-            // //coilColor = m_ColorManager.GetColorIdex(color);
-            // coilColor = color;
-            //
-            // //foreach (var renderer in m_Renderers)
-            // //{
-            // //    renderer.SetPropertyBlock(mpb, 0);
-            // //}
-            //
-            // m_Renderer.SetPropertyBlock(mpb, 0);
             coilColor = color;
+            Debug.LogFormat("ChangeColor: {0} (#{1})", coilColor, ColorUtility.ToHtmlStringRGB(coilColor));
+
             var material = m_ColorManager.GetCoilMaterial(color);
+            Debug.LogFormat("ChangeColor Material: {0}", material);
+
             m_Renderer.material = material;
         }
 

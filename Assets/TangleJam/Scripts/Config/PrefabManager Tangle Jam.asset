@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c588e629003e7dc47875db1e3742546c, type: 3}
+  m_Name: PrefabManager Tangle Jam
+  m_EditorClassIdentifier: 
+  m_CoilPrefab: {fileID: 5687826209815427668, guid: b815c05870fc4cf4684669b4567a53c0, type: 3}
+  m_RopePrefab: {fileID: 5237832701393840461, guid: 80eed2f63b98b1843b404c95fdc07d5a, type: 3}
+  m_TubePrefab: {fileID: 3745079625928248654, guid: 0ee88053cbd03b248a36f067adb06da1, type: 3}
+  m_ButtonsElement: {fileID: 7622061847101917807, guid: 9ed06f20d5375aa48ae32a3c5d3dd63e, type: 3}
+  m_PinControlElement: {fileID: 4986285725794426178, guid: c27702fc4f34d0c419b20479a1ffdad7, type: 3}
+  m_PinWallElement: {fileID: 7229398872557266754, guid: dc426e97da3692147a0e9f4cfafdd7dc, type: 3}
+  m_KeyElement: {fileID: 5815809417809151172, guid: 6d504f8983878b9459f336c97135daf1, type: 3}
+  m_LockElement: {fileID: 3179614038106384241, guid: 8c1c1ae206ddfd74fa0a61069d009e07, type: 3}
+  m_GridElementPrefab: {fileID: 8272310073911235755, guid: 448681619e0141849905e862e3bd6225, type: 3}
+  m_CoilFillCollectParticle: {fileID: -2833201723057448013, guid: 3c97d0110a2d23e42adebf5f51786e9a, type: 3}
+  m_RibbonEffect: {fileID: 5258214274840443176, guid: 22b26b29bc1577242a05aedb641d00f6, type: 3}
+  m_CoilEffectEffect: {fileID: 2972617435956632923, guid: 03f79758cb157424ea3cecaaa9c43890, type: 3}
+  m_CanvasTutorial: {fileID: 2192494003386749774, guid: 4dad9a242cc64004996ec96de3f007e1, type: 3}
+  m_TutorialHand: {fileID: 6389421306962217208, guid: d45123dfc2793a745a6df0c5dcc238a6, type: 3}

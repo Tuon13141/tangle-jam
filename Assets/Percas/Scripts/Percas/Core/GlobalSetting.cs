@@ -1,7 +1,7 @@
+using Percas.UI;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Percas.UI;
 
 namespace Percas
 {
@@ -42,6 +42,8 @@ namespace Percas
 
         private void HomeToGame(Action onCallback = null)
         {
+            Debug.Log("HomeToGame");
+
             AsyncOperation operation;
             operation = SceneManager.LoadSceneAsync(Const.SCENE_GAME);
             GameLoading.OnShow?.Invoke(onCallback, false);

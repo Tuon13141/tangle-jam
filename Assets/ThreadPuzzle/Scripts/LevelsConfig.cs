@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-[CreateAssetMenu(fileName = "LevelsConfig", menuName = "SOLevel/LevelsConfig", order = 0)]
+[CreateAssetMenu(fileName = "LevelsConfig", menuName = "SOLevel/LevelsConfig_old", order = 0)]
 public sealed class LevelsConfig : ScriptableObject
 {
     public LevelAsset[] Loop;
@@ -90,7 +90,7 @@ public sealed class LevelsConfig : ScriptableObject
 
         return colors;
     }
-    
+
     Color GetAverageColorInCell(Texture2D sourceTexture, int cellX, int cellY, int cellWidth, int cellHeight)
     {
         int startX = cellX * cellWidth;

@@ -1,14 +1,14 @@
-using System;
-using System.Collections;
 using AssetKits.ParticleImage;
-using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Percas.Data;
 using Percas.IAR;
 using Percas.UI;
 using Sdk.Google.NativeAds;
 using Spine.Unity;
+using System;
+using System.Collections;
 using TMPro;
+using Tuon;
 using UnityEngine;
 
 namespace Percas
@@ -45,7 +45,7 @@ namespace Percas
         //[SerializeField] float fromY = 632f;
         //[SerializeField] float toY = -288f;
         [SerializeField] float duration = 0.5f;
-        [SerializeField] [Range(0, 1)] float m_RatioActive = 0.5f;
+        [SerializeField][Range(0, 1)] float m_RatioActive = 0.5f;
         [SerializeField] AnimationCurve m_AnimLevelImageMove;
         [SerializeField] AnimationCurve m_AnimLevelImageScale;
 

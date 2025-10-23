@@ -1,7 +1,8 @@
-using System;
 using Percas.Data;
 using Percas.UI;
+using System;
 using TMPro;
+using Tuon;
 using UnityEngine;
 
 namespace Percas
@@ -40,13 +41,20 @@ namespace Percas
         {
             if (!GameLogic.IsInfiniteLive && GameLogic.CurrentLive <= 0 && GameLogic.CurrentLevel >= GameLogic.LevelUnlockHome)
             {
+                Debug.Log("Not Retry Level");
                 ServiceLocator.PopupScene.ShowPopup(PopupName.RefillLives);
             }
             else
             {
+                Debug.Log("Retry Level");
+
                 PlayerDataManager.SetContinueWith("retry");
                 TrackingManager.OnLevelEnd?.Invoke(false, "replay_level");
-                if (LevelController.instance != null) LevelController.instance.ResetLevel();
+                if (LevelController.instance != null)
+                {
+                    LevelController.instance.ResetLevel();
+                }
+                else Debug.LogError("NULL");
                 OnHide();
             }
         }

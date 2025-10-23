@@ -43,8 +43,10 @@ namespace Tuon
 
         private void HomeToGame(Action onCallback = null)
         {
+            Debug.Log("HomeToGame");
             AsyncOperation operation;
             operation = SceneManager.LoadSceneAsync(Const.SCENE_GAME);
+            Debug.Log(operation);
             GameLoading.OnShow?.Invoke(onCallback, false);
         }
 

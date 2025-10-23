@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeBackground : MonoBehaviour
+namespace Tuon
 {
-
-    public Color color1 { get; set; }
-    public Color color2 { get; set; }
-
-    public void Apply()
+    public class ChangeBackground : MonoBehaviour
     {
-        LevelController.instance?.ChangeColorBackground(new TupleSerialize<Color, Color, Color>(color1, color2, color1));
+
+        public Color color1 { get; set; }
+        public Color color2 { get; set; }
+
+        public void Apply()
+        {
+            LevelController.instance?.ChangeColorBackground(new TupleSerialize<Color, Color, Color>(color1, color2, color1));
+        }
     }
 }
+

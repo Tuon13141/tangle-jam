@@ -225,18 +225,18 @@ namespace Tuon
             {
                 if (levelData.IsHard)
                 {
-                    GameLogic.UpdateLevelLabel(true);
+                    GameLogic.UpdateTangleJamLevelLabel(true);
                     GameLogic.UpdateButtonUI(true);
                 }
                 else
                 {
-                    GameLogic.UpdateLevelLabel(false);
+                    GameLogic.UpdateTangleJamLevelLabel(false);
                     GameLogic.UpdateButtonUI(false);
                 }
             }
             else if (GameLogic.IsHiddenPictureMode)
             {
-                GameLogic.UpdateLevelLabel(false);
+                GameLogic.UpdateTangleJamLevelLabel(false);
                 GameLogic.UpdateButtonUI(false);
             }
             //UIGameManager.OnUpdateIconHardLevelPos?.Invoke();
@@ -273,6 +273,7 @@ namespace Tuon
         public void ResetLevel()
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Reset Level");
             GlobalSetting.OnHomeToGame?.Invoke(null);
         }
 

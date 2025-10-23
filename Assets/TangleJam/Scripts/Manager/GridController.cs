@@ -209,9 +209,6 @@ namespace Tuon
 
         [HorizontalLine(2, EColor.Blue)]
         public LevelAsset levelData;
-        [Dropdown("dropdownValue")]
-        public int stageIndex;
-        int[] dropdownValue = new int[3] { 1, 2, 3 };
         Matrix<StageData.CellData> mapData;
 
         [ReadOnly] public List<CoilElement> coilElements = new List<CoilElement>();

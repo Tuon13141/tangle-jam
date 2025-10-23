@@ -6,18 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Percas/Scenes/Loading_old.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Percas/Scenes/Home.unity
-    guid: 088383b472fd4442f998da4d2d41ff75
-  - enabled: 1
-    path: Assets/ThreadPuzzle/Scenes/GamePlay.unity
-    guid: 90365255d9686864fa24cebf21881d99
+    path: Assets/TangleJam/Scenes/Loading.unity
+    guid: 42696030981241f4b921fe94a434cbf4
   - enabled: 1
     path: Assets/TangleJam/Scenes/GamePlay.unity
     guid: 35959f92e60ec8e44a89d0f9c6f51c63
   - enabled: 0
     path: Assets/Percas/Scenes/GameTest.unity
     guid: dd8e300e6a7454ab79cfdf31b1f022bb
+  - enabled: 1
+    path: Assets/Percas/Scenes/Home.unity
+    guid: 088383b472fd4442f998da4d2d41ff75
   m_configObjects: {}

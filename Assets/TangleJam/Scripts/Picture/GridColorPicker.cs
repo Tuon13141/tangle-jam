@@ -8,7 +8,7 @@ namespace Tuon
     public class GridColorPicker : MonoBehaviour
     {
         [ReadOnly, ShowAssetPreview] public Texture2D texture;
-        public PictureAsset pictureAsset;
+        [ReadOnly] public PictureAsset pictureAsset;
 
         public Color[] gridColors = new Color[1024];
         public Color[] currentGridColors = new Color[1024];

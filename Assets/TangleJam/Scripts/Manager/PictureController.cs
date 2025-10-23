@@ -1,6 +1,5 @@
 using DG.Tweening;
 using NaughtyAttributes;
-using Percas.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -22,8 +21,8 @@ namespace Tuon
 
         public BoxCollider boxCollider => m_BoxCollider;
 
-        public LevelAsset levelData;
-        public PictureAsset pictureAsset;
+        [ReadOnly] public LevelAsset levelData;
+        [ReadOnly] public PictureAsset pictureAsset;
 
         public List<Color> colorsInStage;
         public List<Color> pixelColorsInStage = new List<Color>();
@@ -33,7 +32,6 @@ namespace Tuon
         {
             this.levelData = levelData;
 
-            UILevelLabel.OnSetupPhaseItem?.Invoke(1);
             TrackingManager.OnLevelStart?.Invoke();
             GlobalSetting.IsJustPlay = true;
 

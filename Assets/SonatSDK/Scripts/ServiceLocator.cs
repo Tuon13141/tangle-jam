@@ -8,6 +8,8 @@ public static class ServiceLocator
     private static readonly Dictionary<Type, object>
         Services = new Dictionary<Type, object>();
 
+    public static object PopupScene { get; set; }
+
     public static void Register<T>(object serviceInstance)
     {
         Services[typeof(T)] = serviceInstance;

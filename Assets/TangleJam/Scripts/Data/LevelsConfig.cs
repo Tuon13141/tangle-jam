@@ -23,8 +23,16 @@ namespace Tuon
                 return Loop[index - 1];
             }
 
-            var loopIndex = 10 + ((index - 1 - Loop.Length) % (Loop.Length - 10));
-            return Loop[loopIndex];
+            //var loopIndex = 10 + ((index - 1 - Loop.Length) % (Loop.Length - 10));
+
+            //Debug.Log("Index : " + index + " -> Loop Index : " + loopIndex);
+
+            //return Loop[loopIndex];
+            int realIndex = (index - 1) % Loop.Length;
+
+            Debug.Log($"Index: {index} -> Loop Index: {realIndex}");
+
+            return Loop[realIndex];
         }
 
         public void Analytic()

@@ -1,10 +1,10 @@
+using Percas.Data;
+using Percas.IAA;
+using Percas.Live;
+using Percas.UI;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Percas.Data;
-using Percas.Live;
-using Percas.UI;
-using Percas.IAA;
 
 namespace Percas
 {
@@ -19,7 +19,7 @@ namespace Percas
         public static bool AutoEventPopupClosed { get; set; }
 
         public static int CoilEarned { get; set; } = 0;
-        
+
         public static string CheatLevelData { get; set; }
 
         public static Dictionary<string, int> RemoteLevelConfig { get; set; } = new Dictionary<string, int>();
@@ -77,6 +77,8 @@ namespace Percas
         public static int CurrentDailyRewardIndex => PlayerDataManager.PlayerData.DailyRewardIndex;
 
         public static void UpdateLevelLabel(bool isHardLevel) => UILevelLabel.OnUpdateLabel?.Invoke(isHardLevel);
+        public static void UpdateTangleJamLevelLabel(bool isHardLevel) => Tuon.UI.UILevelLabel.OnUpdateLabel?.Invoke(isHardLevel);
+
         public static void UpdateButtonUI(bool isHardLevel) => UIGameManager.OnUpdateButtonUI?.Invoke(isHardLevel);
         public static void UpdateLevelImage(Sprite sprite) => UILevelImage.OnUpdateImage?.Invoke(sprite);
 
